@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imputs HTML</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vw;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome_completo" placeholder="Fulano" />
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" placeholder="idade" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="E_mail" />
+        
+        <div>
+            <p style="margin-bottom: 2px;">Sexo</p>
+            <input type="radio" id="sexoF" value="F" name="sexo"/>
+            <label for="sexoF">Feminino</label>
+        </div>
+        <div>
+            <input type="radio" id="sexoM" value="M" name="sexo"/>
+            <label for="sexoM">Masculino</label>
+        </div>
+        <div>
+            <input type="radio" id="sexoO" value="O" name="sexo"/>
+            <label for="sexoO">Outro</label>
+        </div>
+
+        <p>Hobbys</p>
+        <div>
+            <input type="checkbox" value="sim" id="cantar" name="cantar" />
+            <label for="cantar">Cantar</label>
+        </div>
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>
